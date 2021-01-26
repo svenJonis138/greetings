@@ -1,21 +1,22 @@
 def camelCase():
-
+    # greets our user with a lovely banner
     def banner():
         """Display welcome banner"""
         message = "CAMELCASE PROGRAM!!"
         stars = '*' * len(message)
         print(f'{stars}\n{message}\n{stars}')
     banner()
-
+    # explains how this next-level program will work
+    def instructions():
+        print("All you have to do is type in any sentence and this handy program will convert it to camelCase homie!")
+        print("No more sleepless nights trying to convert your meaningful variable names into camelCase!")
+    instructions()
 
     # takes the users input to convert to camelCase
     newVariable = input("What is the name you would like to convert to camelCase? ")
 
-
-
-
     # checks to see if new var name is valid
-    if newVariable[0].isalpha() == False :
+    if not newVariable[0].isalpha():
         # if not valid, prints an error message and ends program
         print("Warning, you cannot name a variable with the first char as a number or symbol ")
         # if valid, converts to camel case
