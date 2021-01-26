@@ -1,7 +1,18 @@
 def camelCase():
 
+    def banner():
+        """Display welcome banner"""
+        message = "CAMELCASE PROGRAM!!"
+        stars = '*' * len(message)
+        print(f'{stars}\n{message}\n{stars}')
+    banner()
+
+
     # takes the users input to convert to camelCase
     newVariable = input("What is the name you would like to convert to camelCase? ")
+
+
+
 
     # checks to see if new var name is valid
     if newVariable[0].isalpha() == False :
@@ -24,3 +35,5 @@ def camelCase():
         print("Your variable name is " + str(newWord))
 
 camelCase()
+
+
