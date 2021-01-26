@@ -6,6 +6,7 @@ def camelCase():
         stars = '*' * len(message)
         print(f'{stars}\n{message}\n{stars}')
     banner()
+
     # explains how this next-level program will work
     def instructions():
         print("All you have to do is type in any sentence and this handy program will convert it to camelCase homie!")
@@ -34,6 +35,7 @@ def camelCase():
         # now takes the first letter and turns it to lowercase
         newWord = camelCase[0].lower() + camelCase[1:]
         print("Your variable name is " + str(newWord))
+
 
 camelCase()
 
